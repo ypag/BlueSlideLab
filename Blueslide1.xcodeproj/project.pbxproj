@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		0CDED8A11BC6C42F00712BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A01BC6C42F00712BC5 /* main.m */; };
 		0CDED8A41BC6C42F00712BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A31BC6C42F00712BC5 /* AppDelegate.m */; };
-		0CDED8A71BC6C42F00712BC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A61BC6C42F00712BC5 /* ViewController.m */; };
+		0CDED8A71BC6C42F00712BC5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A61BC6C42F00712BC5 /* ViewController.mm */; };
 		0CDED8AA1BC6C42F00712BC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8A81BC6C42F00712BC5 /* Main.storyboard */; };
 		0CDED8AC1BC6C42F00712BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8AB1BC6C42F00712BC5 /* Assets.xcassets */; };
 		0CDED8AF1BC6C42F00712BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8AD1BC6C42F00712BC5 /* LaunchScreen.storyboard */; };
 		0CDED8BA1BC6C42F00712BC5 /* Blueslide1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8B91BC6C42F00712BC5 /* Blueslide1Tests.m */; };
 		0CDED8C51BC6C42F00712BC5 /* Blueslide1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8C41BC6C42F00712BC5 /* Blueslide1UITests.m */; };
+		0CDED8D51BC735DD00712BC5 /* Fyn-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8D31BC735DD00712BC5 /* Fyn-01.png */; settings = {ASSET_TAGS = (); }; };
+		0CDED8D71BC74BA800712BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8D61BC74BA800712BC5 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		0CDED8DB1BC7690900712BC5 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8DA1BC7690900712BC5 /* GreenButton.png */; settings = {ASSET_TAGS = (); }; };
+		0CDED8DD1BC76B9C00712BC5 /* ComicSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8DC1BC76B9C00712BC5 /* ComicSans.ttf */; settings = {ASSET_TAGS = (); }; };
+		0CDED8E01BC7764900712BC5 /* 01IntroSlide.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8DE1BC7764900712BC5 /* 01IntroSlide.png */; settings = {ASSET_TAGS = (); }; };
+		0CDED8E11BC7764900712BC5 /* 02GotaFriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8DF1BC7764900712BC5 /* 02GotaFriend.png */; settings = {ASSET_TAGS = (); }; };
+		0CDED8E31BC7769D00712BC5 /* ComicSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CDED8E21BC7769D00712BC5 /* ComicSansBold.ttf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,7 @@
 		0CDED8A21BC6C42F00712BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CDED8A31BC6C42F00712BC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CDED8A51BC6C42F00712BC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0CDED8A61BC6C42F00712BC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0CDED8A61BC6C42F00712BC5 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		0CDED8A91BC6C42F00712BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CDED8AB1BC6C42F00712BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CDED8AE1BC6C42F00712BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,13 @@
 		0CDED8C01BC6C42F00712BC5 /* Blueslide1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blueslide1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDED8C41BC6C42F00712BC5 /* Blueslide1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blueslide1UITests.m; sourceTree = "<group>"; };
 		0CDED8C61BC6C42F00712BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CDED8D31BC735DD00712BC5 /* Fyn-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fyn-01.png"; sourceTree = "<group>"; };
+		0CDED8D61BC74BA800712BC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0CDED8DA1BC7690900712BC5 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
+		0CDED8DC1BC76B9C00712BC5 /* ComicSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSans.ttf; sourceTree = "<group>"; };
+		0CDED8DE1BC7764900712BC5 /* 01IntroSlide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 01IntroSlide.png; path = ../01IntroSlide.png; sourceTree = "<group>"; };
+		0CDED8DF1BC7764900712BC5 /* 02GotaFriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 02GotaFriend.png; path = ../02GotaFriend.png; sourceTree = "<group>"; };
+		0CDED8E21BC7769D00712BC5 /* ComicSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansBold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,8 @@
 		0CDED8931BC6C42F00712BC5 = {
 			isa = PBXGroup;
 			children = (
+				0CDED8E21BC7769D00712BC5 /* ComicSansBold.ttf */,
+				0CDED8DC1BC76B9C00712BC5 /* ComicSans.ttf */,
 				0CDED89E1BC6C42F00712BC5 /* Blueslide1 */,
 				0CDED8B81BC6C42F00712BC5 /* Blueslide1Tests */,
 				0CDED8C31BC6C42F00712BC5 /* Blueslide1UITests */,
@@ -104,11 +120,12 @@
 				0CDED8A21BC6C42F00712BC5 /* AppDelegate.h */,
 				0CDED8A31BC6C42F00712BC5 /* AppDelegate.m */,
 				0CDED8A51BC6C42F00712BC5 /* ViewController.h */,
-				0CDED8A61BC6C42F00712BC5 /* ViewController.m */,
+				0CDED8A61BC6C42F00712BC5 /* ViewController.mm */,
 				0CDED8A81BC6C42F00712BC5 /* Main.storyboard */,
 				0CDED8AB1BC6C42F00712BC5 /* Assets.xcassets */,
 				0CDED8AD1BC6C42F00712BC5 /* LaunchScreen.storyboard */,
 				0CDED8B01BC6C42F00712BC5 /* Info.plist */,
+				0CDED8D61BC74BA800712BC5 /* Images.xcassets */,
 				0CDED89F1BC6C42F00712BC5 /* Supporting Files */,
 			);
 			path = Blueslide1;
@@ -117,6 +134,10 @@
 		0CDED89F1BC6C42F00712BC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CDED8DE1BC7764900712BC5 /* 01IntroSlide.png */,
+				0CDED8DF1BC7764900712BC5 /* 02GotaFriend.png */,
+				0CDED8DA1BC7690900712BC5 /* GreenButton.png */,
+				0CDED8D31BC735DD00712BC5 /* Fyn-01.png */,
 				0CDED8A01BC6C42F00712BC5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,6 +228,7 @@
 				TargetAttributes = {
 					0CDED89B1BC6C42F00712BC5 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 9VUC3R8D65;
 					};
 					0CDED8B41BC6C42F00712BC5 = {
 						CreatedOnToolsVersion = 7.0;
@@ -244,8 +266,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDED8AF1BC6C42F00712BC5 /* LaunchScreen.storyboard in Resources */,
+				0CDED8E01BC7764900712BC5 /* 01IntroSlide.png in Resources */,
 				0CDED8AC1BC6C42F00712BC5 /* Assets.xcassets in Resources */,
+				0CDED8D71BC74BA800712BC5 /* Images.xcassets in Resources */,
+				0CDED8E31BC7769D00712BC5 /* ComicSansBold.ttf in Resources */,
 				0CDED8AA1BC6C42F00712BC5 /* Main.storyboard in Resources */,
+				0CDED8D51BC735DD00712BC5 /* Fyn-01.png in Resources */,
+				0CDED8E11BC7764900712BC5 /* 02GotaFriend.png in Resources */,
+				0CDED8DB1BC7690900712BC5 /* GreenButton.png in Resources */,
+				0CDED8DD1BC76B9C00712BC5 /* ComicSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDED8A71BC6C42F00712BC5 /* ViewController.m in Sources */,
+				0CDED8A71BC6C42F00712BC5 /* ViewController.mm in Sources */,
 				0CDED8A41BC6C42F00712BC5 /* AppDelegate.m in Sources */,
 				0CDED8A11BC6C42F00712BC5 /* main.m in Sources */,
 			);
@@ -413,7 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Blueslide1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = priya.Blueslide1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Blueslide1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = priya.Blueslide1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
