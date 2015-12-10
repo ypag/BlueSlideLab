@@ -13,6 +13,11 @@
 		0CDB369D1C18C0A10028D2CD /* WhiteTextBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB369C1C18C0A10028D2CD /* WhiteTextBox.png */; settings = {ASSET_TAGS = (); }; };
 		0CDB369F1C18CC400028D2CD /* mapFinish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB369E1C18CC400028D2CD /* mapFinish.png */; settings = {ASSET_TAGS = (); }; };
 		0CDB36A11C18CC480028D2CD /* mapStart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36A01C18CC480028D2CD /* mapStart.png */; settings = {ASSET_TAGS = (); }; };
+		0CDB36A51C1941EB0028D2CD /* GreenLenspng.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36A41C1941EB0028D2CD /* GreenLenspng.png */; settings = {ASSET_TAGS = (); }; };
+		0CDB36A81C1960DF0028D2CD /* green-grass-flat-end-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36A71C1960DF0028D2CD /* green-grass-flat-end-hi.png */; settings = {ASSET_TAGS = (); }; };
+		0CDB36AA1C1971060028D2CD /* Atom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36A91C1971060028D2CD /* Atom.png */; settings = {ASSET_TAGS = (); }; };
+		0CDB36AE1C1971370028D2CD /* 1444363717_space-rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36AD1C1971370028D2CD /* 1444363717_space-rocket.png */; settings = {ASSET_TAGS = (); }; };
+		0CDB36B01C1977550028D2CD /* AlienPlanet.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CDB36AF1C1977550028D2CD /* AlienPlanet.png */; settings = {ASSET_TAGS = (); }; };
 		0CDED8A11BC6C42F00712BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A01BC6C42F00712BC5 /* main.m */; };
 		0CDED8A41BC6C42F00712BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A31BC6C42F00712BC5 /* AppDelegate.m */; };
 		0CDED8A71BC6C42F00712BC5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0CDED8A61BC6C42F00712BC5 /* ViewController.mm */; };
@@ -54,6 +59,12 @@
 		0CDB369C1C18C0A10028D2CD /* WhiteTextBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteTextBox.png; sourceTree = "<group>"; };
 		0CDB369E1C18CC400028D2CD /* mapFinish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapFinish.png; sourceTree = "<group>"; };
 		0CDB36A01C18CC480028D2CD /* mapStart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapStart.png; sourceTree = "<group>"; };
+		0CDB36A41C1941EB0028D2CD /* GreenLenspng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenLenspng.png; sourceTree = "<group>"; };
+		0CDB36A61C1942C90028D2CD /* ComicSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSans.ttf; sourceTree = "<group>"; };
+		0CDB36A71C1960DF0028D2CD /* green-grass-flat-end-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-grass-flat-end-hi.png"; sourceTree = "<group>"; };
+		0CDB36A91C1971060028D2CD /* Atom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Atom.png; sourceTree = "<group>"; };
+		0CDB36AD1C1971370028D2CD /* 1444363717_space-rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1444363717_space-rocket.png"; sourceTree = "<group>"; };
+		0CDB36AF1C1977550028D2CD /* AlienPlanet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlienPlanet.png; sourceTree = "<group>"; };
 		0CDED89C1BC6C42F00712BC5 /* Blueslide1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blueslide1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDED8A01BC6C42F00712BC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CDED8A21BC6C42F00712BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +157,12 @@
 		0CDED89F1BC6C42F00712BC5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CDB36AF1C1977550028D2CD /* AlienPlanet.png */,
+				0CDB36AD1C1971370028D2CD /* 1444363717_space-rocket.png */,
+				0CDB36A91C1971060028D2CD /* Atom.png */,
+				0CDB36A71C1960DF0028D2CD /* green-grass-flat-end-hi.png */,
+				0CDB36A61C1942C90028D2CD /* ComicSans.ttf */,
+				0CDB36A41C1941EB0028D2CD /* GreenLenspng.png */,
 				0CDB36A01C18CC480028D2CD /* mapStart.png */,
 				0CDB369E1C18CC400028D2CD /* mapFinish.png */,
 				0CD522161BD74E360004B819 /* MagicLensIcon.png */,
@@ -287,17 +304,22 @@
 				0CDED8E01BC7764900712BC5 /* 01IntroSlide.png in Resources */,
 				0CD522171BD74E360004B819 /* MagicLensIcon.png in Resources */,
 				0CD522151BD74C590004B819 /* map.png in Resources */,
+				0CDB36AE1C1971370028D2CD /* 1444363717_space-rocket.png in Resources */,
 				0CD522111BD72C430004B819 /* Search-find-binoculars-camping.png in Resources */,
 				0CDED8AC1BC6C42F00712BC5 /* Assets.xcassets in Resources */,
 				0CDED8D71BC74BA800712BC5 /* Images.xcassets in Resources */,
 				0CDED8E31BC7769D00712BC5 /* ComicSansBold.ttf in Resources */,
+				0CDB36B01C1977550028D2CD /* AlienPlanet.png in Resources */,
 				0CDED8AA1BC6C42F00712BC5 /* Main.storyboard in Resources */,
 				0CDED8D51BC735DD00712BC5 /* Fyn-01.png in Resources */,
+				0CDB36AA1C1971060028D2CD /* Atom.png in Resources */,
 				0CDB369D1C18C0A10028D2CD /* WhiteTextBox.png in Resources */,
 				0CDB369F1C18CC400028D2CD /* mapFinish.png in Resources */,
+				0CDB36A51C1941EB0028D2CD /* GreenLenspng.png in Resources */,
 				0CDED8E11BC7764900712BC5 /* 02GotaFriend.png in Resources */,
 				0CDB36A11C18CC480028D2CD /* mapStart.png in Resources */,
 				0CDED8DB1BC7690900712BC5 /* GreenButton.png in Resources */,
+				0CDB36A81C1960DF0028D2CD /* green-grass-flat-end-hi.png in Resources */,
 				0CDED8DD1BC76B9C00712BC5 /* ComicSans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

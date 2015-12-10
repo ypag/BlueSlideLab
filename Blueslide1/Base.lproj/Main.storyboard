@@ -14,8 +14,11 @@
             <string>ComicSansMS</string>
             <string>ComicSansMS</string>
             <string>ComicSansMS</string>
+            <string>ComicSansMS</string>
         </mutableArray>
         <mutableArray key="ComicSansBold.ttf">
+            <string>ComicSansMS-Bold</string>
+            <string>ComicSansMS-Bold</string>
             <string>ComicSansMS-Bold</string>
             <string>ComicSansMS-Bold</string>
             <string>ComicSansMS-Bold</string>
@@ -191,29 +194,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlienPlanet.png" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-qB-4R2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-214" y="111" width="807" height="780"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L15-H7-YXY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="ComicSansMS-Bold" family="Comic Sans MS" pointSize="41"/>
                                 <state key="normal" title="Help Fyn" backgroundImage="GreenButton.png">
                                     <color key="titleColor" white="0.98684210526315785" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="535" y="390" width="185" height="128"/>
+                                </variation>
                                 <connections>
                                     <segue destination="UqS-8a-LYX" kind="show" id="fVF-C3-6PS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Hello Humans, I am Fyn. I am from outer space. My gadgets are hidden on this playground. Would you help me to find them? " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uet-M6-ge2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Hello Humans, I am Fyn. I am from outer space. My gadgets are hidden on this playground. Would you help me find them? " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uet-M6-ge2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="textColor" white="0.25950863486842107" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="488" y="197" width="287" height="130"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="591" y="155" width="287" height="172"/>
                                 </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-zs-qCn">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="218" y="94" width="284" height="347"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="395" y="111" width="161" height="248"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1444363717_space-rocket.png" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-en-jl0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="513" y="679" width="63" height="62"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -225,9 +249,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="EG8-qB-4R2"/>
                                 <exclude reference="L15-H7-YXY"/>
                                 <exclude reference="Uet-M6-ge2"/>
                                 <exclude reference="dLX-zs-qCn"/>
+                                <exclude reference="9BW-en-jl0"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="yzS-vs-pLB"/>
@@ -245,6 +271,12 @@
                                 <include reference="yzS-vs-pLB"/>
                                 <include reference="d4e-gS-A5x"/>
                                 <include reference="w4V-4w-kfc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="EG8-qB-4R2"/>
+                                <include reference="9BW-en-jl0"/>
                             </mask>
                         </variation>
                     </view>
@@ -265,27 +297,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Great! I need a team of two Explorers for this mission. Let's do this! " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2T-Kv-5v8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTextBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="nuC-oC-0q8">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="18"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="310" y="397" width="455" height="190"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="236" y="322" width="564" height="220"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Great! I need a team of two Explorers for this mission. Let's do this! " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2T-Kv-5v8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="545" y="156" width="240" height="128"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="372" y="345" width="319" height="161"/>
+                                </variation>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-0n-5GT">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1176470588" green="0.50196078430000002" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="509" y="424" width="116" height="30"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="308" y="476" width="148" height="30"/>
+                                </variation>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search-find-binoculars-camping.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUT-9b-CDY">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search-find-binoculars-camping.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUT-9b-CDY">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="556" y="268" width="180" height="114"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="370" y="59" width="294" height="235"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-z3-JpI">
@@ -307,25 +357,58 @@
                                         <include reference="5zE-nG-EnQ"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="330" y="550" width="141" height="128"/>
+                                </variation>
                                 <connections>
                                     <segue destination="rEm-U4-Hzk" kind="show" id="pIn-bE-7YI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="raM-bV-Kq2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="1RO-Nk-poE">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="75" width="330" height="393"/>
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="513" y="666" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="9a8-7k-2KD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-248" y="666" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-Gt-Mar">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="148" y="666" width="601" height="126"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FqJ-Ww-TeD">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.1764705882" green="0.4941176471" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="651" y="424" width="120" height="30"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="596" y="471" width="153" height="30"/>
+                                </variation>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="QF0-Nv-5we">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="483" width="230" height="323"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -335,12 +418,16 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="nuC-oC-0q8"/>
                                 <exclude reference="P2T-Kv-5v8"/>
                                 <exclude reference="jjD-0n-5GT"/>
                                 <exclude reference="aUT-9b-CDY"/>
                                 <exclude reference="MIK-z3-JpI"/>
-                                <exclude reference="raM-bV-Kq2"/>
+                                <exclude reference="1RO-Nk-poE"/>
+                                <exclude reference="9a8-7k-2KD"/>
+                                <exclude reference="b2H-Gt-Mar"/>
                                 <exclude reference="FqJ-Ww-TeD"/>
+                                <exclude reference="QF0-Nv-5we"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="aHJ-9F-jFk"/>
@@ -354,13 +441,21 @@
                                 <include reference="jjD-0n-5GT"/>
                                 <include reference="aUT-9b-CDY"/>
                                 <include reference="MIK-z3-JpI"/>
-                                <include reference="raM-bV-Kq2"/>
                                 <include reference="FqJ-Ww-TeD"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="aHJ-9F-jFk"/>
                                 <include reference="IVY-f3-SPl"/>
                                 <include reference="iva-4S-pLm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="nuC-oC-0q8"/>
+                                <include reference="1RO-Nk-poE"/>
+                                <include reference="9a8-7k-2KD"/>
+                                <include reference="b2H-Gt-Mar"/>
+                                <include reference="QF0-Nv-5we"/>
                             </mask>
                         </variation>
                     </view>
@@ -381,6 +476,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Nz-KQ-3Hy">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="482" width="244" height="318"/>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTextBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="2FB-8Z-qxJ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
@@ -426,16 +527,47 @@
                                     <segue destination="2IG-WB-d1e" kind="show" id="wks-6A-fLz"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="uiV-Gt-xVQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="287" y="667" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="XXc-Eo-sBY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="582" y="666" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="Att-In-4Je">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-64" y="667" width="601" height="126"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="3Nz-KQ-3Hy"/>
                                 <exclude reference="2FB-8Z-qxJ"/>
                                 <exclude reference="AAd-9n-bME"/>
                                 <exclude reference="0YH-i9-vgA"/>
                                 <exclude reference="E9E-k1-A13"/>
                                 <exclude reference="DRb-lr-P74"/>
                                 <exclude reference="xSD-qp-jPi"/>
+                                <exclude reference="uiV-Gt-xVQ"/>
+                                <exclude reference="XXc-Eo-sBY"/>
+                                <exclude reference="Att-In-4Je"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -446,6 +578,14 @@
                                 <include reference="E9E-k1-A13"/>
                                 <include reference="DRb-lr-P74"/>
                                 <include reference="xSD-qp-jPi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="3Nz-KQ-3Hy"/>
+                                <include reference="uiV-Gt-xVQ"/>
+                                <include reference="XXc-Eo-sBY"/>
+                                <include reference="Att-In-4Je"/>
                             </mask>
                         </variation>
                     </view>
@@ -471,12 +611,15 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm5-5a-hAg">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="29"/>
-                                <state key="normal" title="Skip" backgroundImage="GreenButton.png">
+                                <fontDescription key="fontDescription" name="ComicSansMS-Bold" family="Comic Sans MS" pointSize="40"/>
+                                <state key="normal" title="I'm here!" backgroundImage="GreenButton.png">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="277" y="613" width="223" height="128"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="I8p-TQ-oo5" kind="show" id="HoR-JA-Sar"/>
+                                    <segue destination="mPH-7V-Jnu" kind="show" id="fHf-eB-DZb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -526,77 +669,6 @@
             </objects>
             <point key="canvasLocation" x="3460.5" y="357"/>
         </scene>
-        <!--MapActivityEnd-->
-        <scene sceneID="2Kz-dY-UIX">
-            <objects>
-                <viewController title="MapActivityEnd" id="I8p-TQ-oo5" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jzk-lR-2u0"/>
-                        <viewControllerLayoutGuide type="bottom" id="BT6-ks-zM2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sHS-wc-99h">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapFinish.png" translatesAutoresizingMaskIntoConstraints="NO" id="SzQ-00-7Gr">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-IW-h7f">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <connections>
-                                    <segue destination="mPH-7V-Jnu" kind="show" id="wy8-DG-Wcf"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="SzQ-00-7Gr" secondAttribute="trailing" constant="-7" id="IGa-YY-1FL"/>
-                            <constraint firstItem="BT6-ks-zM2" firstAttribute="top" secondItem="dC8-IW-h7f" secondAttribute="bottom" constant="167" id="JVW-ot-BT3"/>
-                            <constraint firstItem="SzQ-00-7Gr" firstAttribute="leading" secondItem="sHS-wc-99h" secondAttribute="leadingMargin" id="aVg-M2-LlL"/>
-                            <constraint firstItem="dC8-IW-h7f" firstAttribute="top" secondItem="Jzk-lR-2u0" secondAttribute="bottom" constant="321" id="f6A-yG-WgN"/>
-                            <constraint firstItem="BT6-ks-zM2" firstAttribute="top" secondItem="SzQ-00-7Gr" secondAttribute="bottom" constant="9" id="iEd-F4-eAs"/>
-                            <constraint firstItem="SzQ-00-7Gr" firstAttribute="top" secondItem="sHS-wc-99h" secondAttribute="topMargin" constant="9" id="lU2-qD-5AO"/>
-                            <constraint firstItem="dC8-IW-h7f" firstAttribute="leading" secondItem="sHS-wc-99h" secondAttribute="leadingMargin" constant="350" id="scC-G5-Dca"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dC8-IW-h7f" secondAttribute="trailing" constant="315" id="sxg-ON-Ikr"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="SzQ-00-7Gr"/>
-                                <exclude reference="dC8-IW-h7f"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="JVW-ot-BT3"/>
-                                <exclude reference="iEd-F4-eAs"/>
-                                <exclude reference="f6A-yG-WgN"/>
-                                <exclude reference="scC-G5-Dca"/>
-                                <exclude reference="sxg-ON-Ikr"/>
-                                <exclude reference="IGa-YY-1FL"/>
-                                <exclude reference="aVg-M2-LlL"/>
-                                <exclude reference="lU2-qD-5AO"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="SzQ-00-7Gr"/>
-                                <include reference="dC8-IW-h7f"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="JVW-ot-BT3"/>
-                                <include reference="iEd-F4-eAs"/>
-                                <include reference="f6A-yG-WgN"/>
-                                <include reference="scC-G5-Dca"/>
-                                <include reference="sxg-ON-Ikr"/>
-                                <include reference="IGa-YY-1FL"/>
-                                <include reference="aVg-M2-LlL"/>
-                                <include reference="lU2-qD-5AO"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Eb-He-j8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4092" y="357"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="Zft-47-skk">
             <objects>
@@ -608,24 +680,167 @@
                     <view key="view" contentMode="scaleToFill" id="dKK-lf-Yml">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-iO-mer">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="350" width="194" height="271"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="471" width="232" height="315"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteTextBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="PWb-2N-mLc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="250" y="405" width="441" height="115"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="300" y="411" width="441" height="115"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the Magic Lens to activate it" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW6-Ni-yRg">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="465" width="386" height="42"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="327" y="471" width="386" height="42"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great going!" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKK-UA-6sH">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="378" y="415" width="159" height="42"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="428" y="421" width="159" height="42"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="AxC-OJ-WXa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="654" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="d19-OV-jFp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="433" y="654" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-grass-flat-end-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="oxa-1E-nGZ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="493" width="780" height="128"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-238" y="654" width="601" height="126"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenLenspng.png" translatesAutoresizingMaskIntoConstraints="NO" id="EiI-jf-k05">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="218" y="-5" width="410" height="419"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="286" y="0.0" width="410" height="419"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfZ-oF-OqA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS-Bold" family="Comic Sans MS" pointSize="24"/>
+                                <state key="normal" title="Tap!" backgroundImage="GreenButton.png">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="417" y="145" width="70" height="44"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="bf5-vq-GJ8" kind="show" id="are-1e-IYl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Uyz-iO-mer"/>
+                                <exclude reference="PWb-2N-mLc"/>
+                                <exclude reference="EW6-Ni-yRg"/>
+                                <exclude reference="AKK-UA-6sH"/>
+                                <exclude reference="AxC-OJ-WXa"/>
+                                <exclude reference="d19-OV-jFp"/>
+                                <exclude reference="oxa-1E-nGZ"/>
+                                <exclude reference="EiI-jf-k05"/>
+                                <exclude reference="JfZ-oF-OqA"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Uyz-iO-mer"/>
+                                <include reference="PWb-2N-mLc"/>
+                                <include reference="EW6-Ni-yRg"/>
+                                <include reference="AKK-UA-6sH"/>
+                                <include reference="AxC-OJ-WXa"/>
+                                <include reference="EiI-jf-k05"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="d19-OV-jFp"/>
+                                <include reference="oxa-1E-nGZ"/>
+                                <include reference="JfZ-oF-OqA"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TrE-hj-qmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4732.5" y="357"/>
+            <point key="canvasLocation" x="4118.25" y="357"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T12-5M-rMd">
+            <objects>
+                <viewController id="bf5-vq-GJ8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yTS-HL-la2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zpl-cF-MCR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bp9-aE-Y0o">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yfu-Q9-YUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4803" y="357"/>
         </scene>
     </scenes>
     <resources>
         <image name="01IntroSlide.png" width="1200" height="884"/>
         <image name="02GotaFriend.png" width="1200" height="884"/>
+        <image name="1444363717_space-rocket.png" width="512" height="512"/>
+        <image name="AlienPlanet.png" width="575" height="573"/>
         <image name="Fyn-01.png" width="577" height="754"/>
         <image name="GreenButton.png" width="281" height="128"/>
+        <image name="GreenLenspng.png" width="1139" height="1158"/>
         <image name="MagicLensIcon.png" width="512" height="512"/>
         <image name="Search-find-binoculars-camping.png" width="256" height="256"/>
         <image name="WhiteTextBox.png" width="994" height="459"/>
+        <image name="green-grass-flat-end-hi.png" width="600" height="150"/>
         <image name="map.png" width="128" height="128"/>
-        <image name="mapFinish.png" width="1300" height="1000"/>
         <image name="mapStart.png" width="1288" height="1017"/>
     </resources>
 </document>
