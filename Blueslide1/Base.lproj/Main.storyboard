@@ -15,6 +15,7 @@
             <string>ComicSansMS</string>
             <string>ComicSansMS</string>
             <string>ComicSansMS</string>
+            <string>ComicSansMS</string>
         </mutableArray>
         <mutableArray key="ComicSansBold.ttf">
             <string>ComicSansMS-Bold</string>
@@ -26,10 +27,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Introduction" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -194,10 +195,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlienPlanet.png" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-qB-4R2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlienPlanet.png" translatesAutoresizingMaskIntoConstraints="NO" id="EG8-qB-4R2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="-214" y="111" width="807" height="780"/>
+                                    <rect key="frame" x="-43" y="-53" width="334" height="309"/>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L15-H7-YXY">
@@ -206,13 +207,19 @@
                                 <state key="normal" title="Help Fyn" backgroundImage="GreenButton.png">
                                     <color key="titleColor" white="0.98684210526315785" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="535" y="390" width="185" height="128"/>
-                                </variation>
                                 <connections>
                                     <segue destination="UqS-8a-LYX" kind="show" id="fVF-C3-6PS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-zs-qCn">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="218" y="94" width="284" height="347"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="254" y="183" width="202" height="277"/>
+                                </variation>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="Hello Humans, I am Fyn. I am from outer space. My gadgets are hidden on this playground. Would you help me find them? " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uet-M6-ge2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="textColor" white="0.25950863486842107" alpha="1" colorSpace="calibratedWhite"/>
@@ -222,22 +229,73 @@
                                     <rect key="frame" x="488" y="197" width="287" height="130"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="591" y="155" width="287" height="172"/>
+                                    <rect key="frame" x="442" y="262" width="333" height="172"/>
                                 </variation>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fyn-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="dLX-zs-qCn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1444363717_space-rocket.png" translatesAutoresizingMaskIntoConstraints="NO" id="rpR-ks-VaK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="218" y="94" width="284" height="347"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="395" y="111" width="161" height="248"/>
+                                    <rect key="frame" x="170" y="83" width="100" height="57"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1444363717_space-rocket.png" translatesAutoresizingMaskIntoConstraints="NO" id="9BW-en-jl0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="jZS-ia-yAT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="513" y="679" width="63" height="62"/>
+                                    <rect key="frame" x="72" y="303" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="mtO-9v-IR7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="420" y="453" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="lLr-Tr-4DU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="65" y="555" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDT-aP-z8h">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="561" y="153" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fsQ-sU-lG3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="678" y="45" width="102" height="85"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fSV-c6-AmQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="499" y="771" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="4lO-zD-emM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="367" y="45" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="58M-Ub-cnQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="187" y="742" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ByX-jk-fBU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="734" y="453" width="66" height="50"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starYellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="DC6-mo-GD6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="703" y="649" width="66" height="50"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -251,9 +309,19 @@
                             <mask key="subviews">
                                 <exclude reference="EG8-qB-4R2"/>
                                 <exclude reference="L15-H7-YXY"/>
-                                <exclude reference="Uet-M6-ge2"/>
                                 <exclude reference="dLX-zs-qCn"/>
-                                <exclude reference="9BW-en-jl0"/>
+                                <exclude reference="Uet-M6-ge2"/>
+                                <exclude reference="rpR-ks-VaK"/>
+                                <exclude reference="jZS-ia-yAT"/>
+                                <exclude reference="mtO-9v-IR7"/>
+                                <exclude reference="lLr-Tr-4DU"/>
+                                <exclude reference="yDT-aP-z8h"/>
+                                <exclude reference="fsQ-sU-lG3"/>
+                                <exclude reference="fSV-c6-AmQ"/>
+                                <exclude reference="4lO-zD-emM"/>
+                                <exclude reference="58M-Ub-cnQ"/>
+                                <exclude reference="ByX-jk-fBU"/>
+                                <exclude reference="DC6-mo-GD6"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="yzS-vs-pLB"/>
@@ -264,8 +332,8 @@
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="L15-H7-YXY"/>
-                                <include reference="Uet-M6-ge2"/>
                                 <include reference="dLX-zs-qCn"/>
+                                <include reference="Uet-M6-ge2"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="yzS-vs-pLB"/>
@@ -276,7 +344,17 @@
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="EG8-qB-4R2"/>
-                                <include reference="9BW-en-jl0"/>
+                                <include reference="rpR-ks-VaK"/>
+                                <include reference="jZS-ia-yAT"/>
+                                <include reference="mtO-9v-IR7"/>
+                                <include reference="lLr-Tr-4DU"/>
+                                <include reference="yDT-aP-z8h"/>
+                                <include reference="fsQ-sU-lG3"/>
+                                <include reference="fSV-c6-AmQ"/>
+                                <include reference="4lO-zD-emM"/>
+                                <include reference="58M-Ub-cnQ"/>
+                                <include reference="ByX-jk-fBU"/>
+                                <include reference="DC6-mo-GD6"/>
                             </mask>
                         </variation>
                     </view>
@@ -356,9 +434,6 @@
                                     <mask key="constraints">
                                         <include reference="5zE-nG-EnQ"/>
                                     </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="330" y="550" width="141" height="128"/>
                                 </variation>
                                 <connections>
                                     <segue destination="rEm-U4-Hzk" kind="show" id="pIn-bE-7YI"/>
@@ -615,9 +690,6 @@
                                 <state key="normal" title="I'm here!" backgroundImage="GreenButton.png">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="277" y="613" width="223" height="128"/>
-                                </variation>
                                 <connections>
                                     <segue destination="mPH-7V-Jnu" kind="show" id="fHf-eB-DZb"/>
                                 </connections>
@@ -669,10 +741,10 @@
             </objects>
             <point key="canvasLocation" x="3460.5" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--TapMagicLens-->
         <scene sceneID="Zft-47-skk">
             <objects>
-                <viewController id="mPH-7V-Jnu" sceneMemberID="viewController">
+                <viewController title="TapMagicLens" id="mPH-7V-Jnu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NfI-Us-uI5"/>
                         <viewControllerLayoutGuide type="bottom" id="eWk-MA-30Q"/>
@@ -810,22 +882,107 @@
             </objects>
             <point key="canvasLocation" x="4118.25" y="357"/>
         </scene>
-        <!--View Controller-->
+        <!--TrackingActivity-->
         <scene sceneID="T12-5M-rMd">
             <objects>
-                <viewController id="bf5-vq-GJ8" sceneMemberID="viewController">
+                <viewController title="TrackingActivity" id="bf5-vq-GJ8" customClass="ViewControllerTracking" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yTS-HL-la2"/>
                         <viewControllerLayoutGuide type="bottom" id="Zpl-cF-MCR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bp9-aE-Y0o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0JS-Cy-46U">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenLensMotionMode.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ram-ql-Ual">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic Lens activated! Find a swing and press begin when you are ready" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOC-Lz-yYe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="233" y="223" width="348" height="95"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d49-Xv-qre">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" backgroundImage="GreenButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zpl-cF-MCR" firstAttribute="top" secondItem="Ram-ql-Ual" secondAttribute="bottom" constant="136" id="3Sb-CX-AWh"/>
+                            <constraint firstItem="lOC-Lz-yYe" firstAttribute="leading" secondItem="bp9-aE-Y0o" secondAttribute="leading" constant="233" id="Ahc-sD-axH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ram-ql-Ual" secondAttribute="trailing" constant="-20" id="G04-pU-Ms6"/>
+                            <constraint firstItem="Ram-ql-Ual" firstAttribute="leading" secondItem="bp9-aE-Y0o" secondAttribute="leadingMargin" constant="-20" id="QWc-S8-k4y"/>
+                            <constraint firstItem="lOC-Lz-yYe" firstAttribute="top" secondItem="yTS-HL-la2" secondAttribute="bottom" constant="203" id="VJP-Ft-Ukx"/>
+                            <constraint firstAttribute="trailing" secondItem="d49-Xv-qre" secondAttribute="trailing" constant="304" id="fJy-gq-B9n"/>
+                            <constraint firstAttribute="trailing" secondItem="lOC-Lz-yYe" secondAttribute="trailing" constant="219" id="fLv-Mw-ReR"/>
+                            <constraint firstItem="Zpl-cF-MCR" firstAttribute="top" secondItem="d49-Xv-qre" secondAttribute="bottom" constant="213" id="fxI-sa-xha"/>
+                            <constraint firstItem="d49-Xv-qre" firstAttribute="leading" secondItem="bp9-aE-Y0o" secondAttribute="leading" constant="319" id="itG-rJ-2w2"/>
+                            <constraint firstItem="Ram-ql-Ual" firstAttribute="top" secondItem="yTS-HL-la2" secondAttribute="bottom" constant="119" id="sCv-8r-5EN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0JS-Cy-46U"/>
+                                <exclude reference="Ram-ql-Ual"/>
+                                <exclude reference="lOC-Lz-yYe"/>
+                                <exclude reference="d49-Xv-qre"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3Sb-CX-AWh"/>
+                                <exclude reference="fxI-sa-xha"/>
+                                <exclude reference="fJy-gq-B9n"/>
+                                <exclude reference="itG-rJ-2w2"/>
+                                <exclude reference="Ahc-sD-axH"/>
+                                <exclude reference="VJP-Ft-Ukx"/>
+                                <exclude reference="fLv-Mw-ReR"/>
+                                <exclude reference="G04-pU-Ms6"/>
+                                <exclude reference="QWc-S8-k4y"/>
+                                <exclude reference="sCv-8r-5EN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0JS-Cy-46U"/>
+                                <include reference="Ram-ql-Ual"/>
+                                <include reference="lOC-Lz-yYe"/>
+                                <include reference="d49-Xv-qre"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3Sb-CX-AWh"/>
+                                <include reference="fxI-sa-xha"/>
+                                <include reference="fJy-gq-B9n"/>
+                                <include reference="itG-rJ-2w2"/>
+                                <include reference="Ahc-sD-axH"/>
+                                <include reference="VJP-Ft-Ukx"/>
+                                <include reference="fLv-Mw-ReR"/>
+                                <include reference="G04-pU-Ms6"/>
+                                <include reference="QWc-S8-k4y"/>
+                                <include reference="sCv-8r-5EN"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="InstructText" destination="lOC-Lz-yYe" id="9z9-ow-cKs"/>
+                        <outlet property="beginButton" destination="d49-Xv-qre" id="Vyx-nR-JM5"/>
+                        <outlet property="imageView" destination="0JS-Cy-46U" id="0WN-D7-zob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yfu-Q9-YUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4803" y="357"/>
+            <point key="canvasLocation" x="4828.5" y="351"/>
         </scene>
     </scenes>
     <resources>
@@ -835,6 +992,7 @@
         <image name="AlienPlanet.png" width="575" height="573"/>
         <image name="Fyn-01.png" width="577" height="754"/>
         <image name="GreenButton.png" width="281" height="128"/>
+        <image name="GreenLensMotionMode.png" width="1194" height="903"/>
         <image name="GreenLenspng.png" width="1139" height="1158"/>
         <image name="MagicLensIcon.png" width="512" height="512"/>
         <image name="Search-find-binoculars-camping.png" width="256" height="256"/>
@@ -842,5 +1000,6 @@
         <image name="green-grass-flat-end-hi.png" width="600" height="150"/>
         <image name="map.png" width="128" height="128"/>
         <image name="mapStart.png" width="1288" height="1017"/>
+        <image name="starYellow.png" width="128" height="128"/>
     </resources>
 </document>
