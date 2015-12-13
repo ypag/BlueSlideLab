@@ -1,9 +1,8 @@
 # BlueSlideLab
 
-The Blue Slide Laboratory engages young learners(4th- 8th grade) in educational and performative experiences at the playground by connecting physics and math principles to imaginative play and interaction using augmented reality technology. 
-Visit my website for more information: http://priyaganadas.in
+The Blue Slide Laboratory engages young learners(4th- 8th grade) in educational and performative experiences at the playground by connecting physics and math principles to imaginative play and interaction 
 
-BluSlideLab1 : an iOS app to learn about linear and periodic motion from observing swings real time.
+The first of the series of these apps helps children learn periodic motions( physics of pendulum) with help fo playful interactions at swings in playground. 
 
-This Project is part of my thesis work at Carnegie Mellon University. 
-Thank you for visiting. 
+CMT (Consensus-based Matching and Tracking of Keypoints for Object Tracking) by gnebehay (https://github.com/gnebehay/CppMT) is used to implement real time object tracking on iOS device. 
+Introductory video: https://vimeo.com/148518261
