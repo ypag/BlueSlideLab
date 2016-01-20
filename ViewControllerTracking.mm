@@ -194,19 +194,20 @@ typedef enum {
     periodicity.textAlignment = NSTextAlignmentCenter;
     [periodicity setFont:[UIFont fontWithName:@"Comic Sans MS" size:23]];
     periodicity.text = @" Periodicity ";
-    periodicity.textColor = [UIColor yellowColor];
+    periodicity.textColor = [UIColor grayColor];
     [self.view addSubview:periodicity];
     
     //Show labels for periodic motionafter  guiding image is hidden
-    UILabel* AboutMotion = [[UILabel alloc] initWithFrame:CGRectMake(280, 30, 550, 300)];
+   /* UILabel* AboutMotion = [[UILabel alloc] initWithFrame:CGRectMake(280, 50, 550, 130)];
     AboutMotion.tag = 1005;
     AboutMotion.numberOfLines = 3;
     AboutMotion.textAlignment = NSTextAlignmentCenter;
     [AboutMotion setFont:[UIFont fontWithName:@"Comic Sans MS" size:25]];
-    AboutMotion.text = @" Motion of swing repeats in equal amount of time and is called Periodic Motion";
+    AboutMotion.text = @" The back and forth motion of swing repeats in equal amount of time. It is called 'Periodic Motion'";
     AboutMotion.textColor = [UIColor whiteColor];
+    AboutMotion.backgroundColor = [UIColor grayColor];
     [self.view addSubview:AboutMotion];
-
+*/
     
 }
 
@@ -284,7 +285,7 @@ typedef enum {
         copy = image.clone();
         
         //Drawing the pivot and line joining the pivot and center of the pendulum
-        circle(image, pivot_top, 3, Scalar(0,255,255), -1);
+        circle(image, pivot_top, 3, Scalar(255,255,0), -1);
         line(image,pivot_top,rect.center, Scalar(255,255,0),0.5,LINE_8);
         
         //lines to guide the position of the player on swing
@@ -304,7 +305,7 @@ typedef enum {
         Point2f newCenter ; // point to create a remapped pendulum, this is to visualise periodicity on x axis or amplitude of the motion
         newCenter.x =  rect.center.x;
         newCenter.y = 20;
-        circle(copy, newCenter, 10, Scalar(0,255,255), -1);
+        circle(copy, newCenter, 10, Scalar(255,255,0), -1);
         line(copy, Point2f(0,20),Point2f(640,20), Scalar(0,255,255));
 
         
